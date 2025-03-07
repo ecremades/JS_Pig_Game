@@ -3,7 +3,7 @@
 Este es un juego interactivo implementado con JavaScript donde dos jugadores compiten por alcanzar 100 puntos.
 
 ## Demo en vivo
-[Jugar Pig Game](https://tu-usuario-github.github.io/JS_Pig_Game)
+[Jugar Pig Game](https://ecremades.github.io/JS_Pig_Game/)
 
 ## Reglas del juego
 - Los jugadores toman turnos para tirar un dado
@@ -17,7 +17,7 @@ Este es un juego interactivo implementado con JavaScript donde dos jugadores com
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/JS_Pig_Game.git
+git clone https://github.com/ecremades/JS_Pig_Game.git
 
 # Entrar al directorio
 cd JS_Pig_Game
@@ -37,11 +37,3 @@ npm run build
 - JavaScript
 - HTML5
 - CSS3
-
-## Tareas
-
-- Integramos index.html y los datos dentro de la estructura de vite
-- Gestionar el repositorio en GitHub y hacer un mínimo de 5 commits y que sean públicos
-- Publicar el repo usando gh-pages
-
-## Pasos segidos
