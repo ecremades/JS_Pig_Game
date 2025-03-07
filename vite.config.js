@@ -2,6 +2,5 @@ import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: "/pig-game/",
+    base: "/JS_Pig_Game/",
 });
-
