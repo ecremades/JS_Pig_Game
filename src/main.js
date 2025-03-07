@@ -1,11 +1,3 @@
-// Importamos las imágenes de los dados
-import dice1 from '../public/dice-1.png';
-import dice2 from '../public/dice-2.png';
-import dice3 from '../public/dice-3.png';
-import dice4 from '../public/dice-4.png';
-import dice5 from '../public/dice-5.png';
-import dice6 from '../public/dice-6.png';
-
 import "./style.css";
 
 // ========================
@@ -23,16 +15,6 @@ const btnNew = document.querySelector(".btn--new");
 const btnHold = document.querySelector(".btn--hold");
 const btnRoll = document.querySelector(".btn--roll");
 const imgDice = document.querySelector(".dice");
-
-// Mapa de imágenes de dados
-const diceImages = {
-  1: dice1,
-  2: dice2,
-  3: dice3,
-  4: dice4,
-  5: dice5,
-  6: dice6
-};
 
 // Variables de estado
 let score, currentScore, activePlayer, playing;
@@ -68,7 +50,7 @@ function throwDice() {
   if (playing) {
     const diceNumber = Math.trunc(Math.random() * 6 + 1);
     imgDice.classList.remove("hidden");  
-    imgDice.src = diceImages[diceNumber];
+    imgDice.src = new URL(`./assets/dice-${diceNumber}.png`, import.meta.url).href;
 
     if (diceNumber !== 1) updateCurrentScore(diceNumber);
     else switchPlayer();
